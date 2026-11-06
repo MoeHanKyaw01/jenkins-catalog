@@ -9,7 +9,7 @@ export default function Home() {
         <header className="mb-8">
           <h1 className="text-3xl font-bold">Course Catalog</h1>
           <p className="text-slate-400">Moe Han Kyaw 6703711 · Deployed by Jenkins</p>
-        {/* </header> removed: JSX syntax error */}
+        </header>
 
         <Suspense fallback={<p className="text-slate-400">Loading courses...</p>}>
           <Courses />
