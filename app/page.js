@@ -1,15 +1,16 @@
 import { Suspense } from "react";
 import { connection } from "next/server";
 import { pool } from "@/lib/db";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="catalog">
       <nav className="topbar" aria-label="Site header">
-        <a href="/" className="brand">
-          <span className="brand-icon" aria-hidden="true">C.</span>
-          <span>Coursebook<span className="brand-dot">.</span></span>
-        </a>
+        <Link href="/" className="brand">
+  <span className="brand-icon" aria-hidden="true">C.</span>
+  <span>Coursebook<span className="brand-dot">.</span></span>
+</Link>
 
         <span className="nav-label">ACADEMIC COURSE DIRECTORY</span>
       </nav>
@@ -65,7 +66,9 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        <a href="/" className="footer-brand">Coursebook.</a>
+        <Link href="/" className="footer-brand">
+  Coursebook.
+</Link>
         <p>Built for a brighter next chapter.</p>
         <span>Next.js · MySQL · Docker · Jenkins</span>
       </footer>
